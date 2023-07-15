@@ -15,26 +15,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Mangawhai, New Zealand</h1>
-        <ul>
-          <li>Saturday 1:35pm</li>
-          <li>Partly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://s.yimg.com/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png"
-              alt="Partly Cloudy"
-            />
-            17°C | °F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Mangawhai, New Zealand</h1>
             <ul>
-              <li>Precipitation: 2%</li>
-              <li>Humidity 74%</li>
-              <li>Wind: 24 km/h</li>
+              <li>Saturday 1:35pm</li>
+              <li>Partly Cloudy</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://s.yimg.com/os/weather/1.0.1/shadow_icon/60x60/fair_day@2x.png"
+                  alt="Partly Cloudy"
+                  id="icon"
+                />
+                <div>
+                  <strong id="temperature">17 </strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 2%</li>
+                <li>Humidity 74%</li>
+                <li>Wind: 24 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>
