@@ -38,6 +38,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "65394c1aaf70b9a62t37c04bob3209ea";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Mangawhai&key=${apiKey}&units=metric`;
+let city = "Mangawhai";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
