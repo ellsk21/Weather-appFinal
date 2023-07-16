@@ -33,6 +33,7 @@ ul {
   padding: 40px;
   border: 1px solid;
   border-radius: 10px;
+  background-color: rgb(243, 217, 183);
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -56,4 +57,18 @@ ul {
   position: relative;
   font: 26px;
   top: -14px;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
 }
