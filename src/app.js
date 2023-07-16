@@ -43,8 +43,16 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let apiKey = "65394c1aaf70b9a62t37c04bob3209ea";
-let city = "Mangawhai";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "65394c1aaf70b9a62t37c04bob3209ea";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+search("Mangawhai");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
