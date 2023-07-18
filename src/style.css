@@ -75,4 +75,10 @@ ul {
 .btn-primary {
   background-color: #d0745b;
   border-color: orange;
+  color: #ffd490;
+}
+.btn-primary:hover {
+  background-color: #ffd490;
+  border-color: orange;
+  color: #d0745b;
 }
