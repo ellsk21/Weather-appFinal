@@ -72,3 +72,7 @@ ul {
 .weather-forecast-temperature {
   font-size: 13px;
 }
+.btn-primary {
+  background-color: #d0745b;
+  border-color: orange;
+}
